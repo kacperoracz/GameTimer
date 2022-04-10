@@ -112,14 +112,14 @@ body{
     position: fixed;
     top: 100vh;
     left: 0;
-    height: 70vh;
+    height: 63vh;
 
     width: 100vw;
     transition: ease .5s;
 }
 
 .menu.open{
-    top: 32vh;
+    top: 34vh;
 }
 
 .menu h3{
@@ -129,8 +129,8 @@ body{
 
     position: absolute;
     bottom: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 1.5vh;
+    padding-bottom: .5vh;
     text-align: center;
     width: 100vw;
 }
@@ -149,4 +149,35 @@ body{
 .menu ul li{
     text-align: center;
     color: #157CB0;
+    font-size: 6vw;
+}
+
+.menu .timeOptions{
+    position: absolute;
+    width: 100vw;
+    height: 66vh;
+    top: 0;
+    left: 100vw;
+    background-color: aquamarine;
+    transition: linear .2s;
+}
+
+.menu .timeOptions.open{
+    top: 0;
+    left: 0;
+}
+
+.menu .playersOptions{
+    position: absolute;
+    width: 100vw;
+    height: 66vh;
+    top: 0;
+    right: 100vw;
+    background-color: bisque;
+    transition: linear .2s;
+}
+
+.menu .playersOptions.open{
+    top: 0;
+    right: 0;
 }

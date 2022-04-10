@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: #FFFA62;
+
+    font-family: 'Orbitron', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: #157CB0;
+    max-height: 100vh;
+    margin: 20px;
+}
+
+.person{
+    position: relative;
+    height: 10%;
+}
+
+.person h1{
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: 10px;
+    border-bottom: #FC1E34 5px solid;
+    border-radius: 20%;
+}
+
+.timer{
+    position: relative;
+    height: 15%;
+}
+
+.timer h2{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    font-size: 3em;
+}
+
+.timer h2 span{
+    color: #05AAFC;
+}
+
+.timerButton{
+
+    height: 20%;
+    font-size: 3.5em;
+    /* background-color: #FC1E34; */
+    background-color: transparent;
+    border: none;
+    border-top: #05AAFC 5px solid;
+    border-bottom: #05AAFC 5px solid;
+    border-radius: 20%;
+
+    margin-bottom: 30px;
+}
+
+.timerButton p{
+    color: #f0e936;
+    font-weight: bold;
+}
+
+.players{
+    height: 40vh;
+}
+
+.players ul{
+    padding: 10px;
+    border: 5px solid #05AAFC;
+    border-radius: 20%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10%;
+}
+
+.players ul li{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    border-bottom: 5px solid #05AAFC;
+    border-radius: 20%;
+}
+
+.players ul li .name{
+    text-align: left;
+    width: 50%;
+    text-align: center;
+    flex-grow: 2;
+}
+
+.players ul li .time{
+    text-align: right;
+    width: 50%;
+    text-align: center;
+    flex-grow: 2;
+}
+
+.menu{
+    background-color: #FC1E34;
+    position: fixed;
+    top: 100%;
+    left: 0;
+    height: 70vh;
+
+    width: 100vw;
+    
+}
+
+.menu h3{
+    background-color: #FC1E34;
+    border-radius: 20% 20% 0 0;
+
+    position: absolute;
+    bottom: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 100vw;
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f0e936;
+    width: 100%;
+    height: 90%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.menu ul li{
+    text-align: center;
+    color: #157CB0;
+}

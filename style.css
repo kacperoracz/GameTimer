@@ -22,7 +22,7 @@ body{
 .person h1{
     display: block;
     text-align: center;
-    font-size: 3em;
+    font-size: 3hv;
     padding-bottom: 10px;
     border-bottom: #FC1E34 5px solid;
     border-radius: 20%;
@@ -37,7 +37,7 @@ body{
     text-align: center;
     position: relative;
     display: block;
-    font-size: 3em;
+    font-size: 3hv;
 }
 
 .timer h2 span{

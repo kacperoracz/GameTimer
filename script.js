@@ -12,9 +12,9 @@
 //   }  
 // }
 
-// const menu = document.querySelector(".menu");
-// const menuHeader = document.querySelector(".menu h3");
+const menu = document.querySelector(".menu");
+const menuHeader = document.querySelector(".menu h3");
 
-// menuHeader.addEventListener("click", e => {
-    
-// });
+menuHeader.addEventListener("click", e => {
+    menu.classList.toggle("open");
+});

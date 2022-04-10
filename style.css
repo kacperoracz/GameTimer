@@ -46,21 +46,28 @@ body{
 
 .timerButton{
     height: 20vh;
-    font-size: 15vw;
-    /* background-color: #FC1E34; */
     background-color: transparent;
     border: none;
-    border-top: #05AAFC 5px solid;
-    border-bottom: #05AAFC 5px solid;
-    border-radius: 20%;
-
-    margin-top: 0.5vh;
     margin-bottom: 3vh;
+}
+
+.timerButton:active p{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 14vw;
 }
 
 .timerButton p{
     color: #f0e936;
     font-weight: bold;
+    border-top: #05AAFC 5px solid;
+    border-bottom: #05AAFC 5px solid;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    border-radius: 20%;
+    font-size: 15vw;
+    line-height: 10vh;
+    transition: ease .2s;
 }
 
 .players{
@@ -82,8 +89,7 @@ body{
     justify-content: space-between;
     height: 4vh;
     text-align: center;
-    margin-top: .5vh;
-    margin-bottom: 5px;
+    margin-top: 1vh;
     border-bottom: 5px solid #05AAFC;
     border-radius: 20%;
 }
@@ -104,12 +110,16 @@ body{
 .menu{
     background-color: #FC1E34;
     position: fixed;
-    top: 100%;
+    top: 100vh;
     left: 0;
     height: 70vh;
 
     width: 100vw;
-    
+    transition: ease .5s;
+}
+
+.menu.open{
+    top: 32vh;
 }
 
 .menu h3{
